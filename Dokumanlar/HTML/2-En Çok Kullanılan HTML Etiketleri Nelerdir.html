@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>En Çok Kullanılan HTML Etiketleri Nelerdir</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="en-çok-kullanılan-html-etiketleri-nelerdir">En Çok Kullanılan HTML Etiketleri Nelerdir</h1>
+<p>Yazıya başlamadan önce  <strong>HTML</strong>  dilinde bir etiket nasıl oluşturulur bunu göstermek istiyorum. Etiketler küçüktür ve büyüktür işaretlerinin arasına yazılarak başlar (<em>örn.</em>  <code>&lt;etiket&gt;</code>) içeriği yazdıktan sonra etiketi kapatmanız gerekir. Etiketi kapatmak için küçüktür, slash, etiket, büyüktür şeklinde yazılmalı (<em>örn.</em>  <code>&lt;/etiket&gt;</code>) Bütün bir örnek yapmak gerekirse (<em>örn.</em>  <code>&lt;etiket&gt;</code>  İçerik Yazılacak Alan  <code>&lt;/etiket&gt;</code>)</p>
+<p><strong>Not:</strong>  Bazı etiketler kapanmaya ihtiyaç duymazlar (<em>örn.</em>  <code>&lt;br&gt;</code>,  <code>&lt;hr&gt;</code>,  <code>&lt;meta&gt;</code>  vs.)</p>
+<h2 id="html-etiketi">HTML Etiketi</h2>
+<p>HTML etiketi, dosya içeriğinin HTML dilinde yazıldığını tarayıcımıza bildirir. Bu etiket, kendi altında mutlaka  <code>&lt;head&gt;</code>  ve  <code>&lt;body&gt;</code>  etiketlerini barındırmalıdır. Eğer bir HTML dökümanı oluşturmak isterseniz ilk yapacağınız iş bir  <code>&lt;html&gt;</code>  etiketi oluşturmaktır. Ardından HTML etiketi altına  <code>&lt;head&gt;</code>  ve  <code>&lt;body&gt;</code>  etiketlerini yazmalısınız.</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;html&gt;   &lt;head&gt;&lt;/head&gt; 
+  &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h2 id="head-etiketi">HEAD Etiketi</h2>
+<p><code>&lt;head&gt;</code>  etiketi, site ziyaretçileri tarafından görülmesi gerekmeyen kodları içerir. Bu etiket altına yazılan kodlar genellikle arama motorları ve örümcekler (Crawler veya Spider diye geçer) içindir. Head etiketi altında bütün etiketleri kullanabilmeniz mümkün değil. Kullanabileceğiniz etiketler;</p>
+<ul>
+<li><code>&lt;title&gt;</code>  (Bu etiketi kullanmak şarttır)</li>
+<li><code>&lt;meta&gt;</code></li>
+<li><code>&lt;style&gt;</code></li>
+<li><code>&lt;script&gt;</code></li>
+<li><code>&lt;noscript&gt;</code></li>
+<li><code>&lt;link&gt;</code></li>
+<li><code>&lt;base&gt;</code></li>
+</ul>
+<pre class=" language-text"><code class="prism  language-text">&lt;html&gt;   &lt;HEAD&gt;
+    &lt;title&gt; Sekmede Görülecek İsim &lt;/title&gt;
+    &lt;meta name="Keywords" content="HTML,Kodluyoruz"&gt;
+  &lt;/HEAD&gt; 
+  
+  &lt;BODY&gt;&lt;/BODY&gt;
+  
+&lt;/html&gt;
+
+</code></pre>
+<h2 id="body-etiketi">BODY Etiketi</h2>
+<p>Web sayfamızda görmek istediğimiz bütün içerikleri  <code>&lt;body&gt;</code>  etiketi altına yazıyoruz. Anlatacağım diğer etiketleri  <code>&lt;body&gt;</code>  etiketi içerisine yazacağız.</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;html&gt;   &lt;HEAD&gt;
+    &lt;title&gt; Sekmede Görülecek İsim &lt;/title&gt;
+    &lt;meta name="Keywords" content="HTML,Kodluyoruz"&gt;
+  &lt;/HEAD&gt; 
+  
+  &lt;BODY&gt;
+    Site İçeriği
+  &lt;/BODY&gt;
+&lt;/html&gt;
+
+</code></pre>
+<p><strong>Not:</strong></p>
+<p>Şu ana kadar oluşturduğumuz yapıyı idelerde kısayollar ile hızlıca oluşturabiliyoruz. Ben Visual Studio Code (VSC) kullanıyorum. VSC üzerinde  <strong>“! + Enter”</strong>  yazarak aşağıdaki yapıyı hızlıca oluşturabilirsiniz.</p>
+<p><code>&lt;!DOCTYPE html&gt;</code>  : Dökümanımızın  <strong>HTML</strong>  dilinde olduğunu tarayıcımıza bildiren talimattır.  <code>&lt;html lang="en"&gt;</code>  : Site içeriğinin dilini belirten etiket,  <strong>“en”</strong>  yerine  <strong>“tr”</strong>  yazabilirsiniz.</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h2 id="h-etiketleri">H Etiketleri</h2>
+<p><strong>H</strong>  etiketleri başlık etiketleridir. Büyükten küçüğe sırasıyla</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;h1&gt; &lt;h2&gt;
+&lt;h3&gt;
+&lt;h4&gt;
+&lt;h5&gt;
+&lt;h6&gt;
+
+</code></pre>
+<p>şeklindedir.</p>
+<p><strong>Not:</strong>  HTML otomatik olarak  <strong>Başlık</strong>  etiketlerinin öncesine ve sonrasına satır atlatır.</p>
+<h2 id="p-etiketi">P Etiketi</h2>
+<p><code>&lt;p&gt;</code>  etiketi paragraf etiketidir. Sayfa içerisinde oluşturacağımız metinleri  <code>&lt;p&gt;</code>  etiketi ile oluştururuz. Aşağıdaki örnekte hem başlık etiketi hem de paragrafa etiketini kullandım.</p>
+<p><strong>Not:</strong>  HTML otomatik olarak  <strong>Paragraf</strong>  etiketinin öncesine ve sonrasına satır atlatır.</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Kodluyoruz&lt;/h2&gt;
+    &lt;p&gt;HTML Etiketleri&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h2 id="br-etiketi">BR Etiketi</h2>
+<p><code>&lt;br&gt;</code>  etiketi satır atlatma etiketidir ve kapatmaya ihtiyaç duymayan etiketlerden biridir. Atlatmak istediğiniz satır sayısı kadar  <code>&lt;br&gt;</code>  etiketi kullanabilirsiniz. NOT: BR etiketinin farklı kullanımlarını görebilirsiniz.  <em>örn.</em>(<code>&lt;br&gt;</code>,<code>&lt;br/&gt;</code>,<code>&lt;br /&gt;</code>) Hepsi aynı işlevi yerine getirir.</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Kodluyoruz&lt;/h2&gt; &lt;br&gt;
+    &lt;p&gt;HTML &lt;br&gt; Etiketleri&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h2 id="a-etiketi">A Etiketi</h2>
+<p><code>&lt;a&gt;</code>  etiketinin en önemli özelliği  <strong>href</strong> özelliğidir. Bu etiket ile sayfaları linkleyebiliriz. Etiket içerisine yazılan içerik sayfa üzerinde gösterilecek içeriktir. href içine yazılan ise tıklandığında gideceği URL’dir.</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;a href="https://www.kodluyoruz.org"&gt;Kodluyoruz&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h2 id="ul---ol---li-etiketi">UL - OL - Li Etiketi</h2>
+<p><code>&lt;ul&gt;</code>  ve  <code>&lt;ol&gt;</code>  etiketleri liste oluşturma etiketleridir. Listeyi oluşturduktan sonra içeriğini oluşturmak için  <code>&lt;li&gt;</code>  etiketini kullanıyoruz.</p>
+<p><code>&lt;ul&gt;</code>  =  <strong>“unordered list”</strong>  sırasız liste anlamına geliyor.  <code>&lt;ol&gt;</code>  =  <strong>“ordered list”</strong>  sıralı liste anlamına geliyor.</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   
+    &lt;ul&gt;
+        &lt;li&gt;HTML&lt;/li&gt;
+        &lt;li&gt;CSS&lt;/li&gt;
+        &lt;li&gt;JavaScript&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;ol&gt;
+        &lt;li&gt;HTML&lt;/li&gt;
+        &lt;li&gt;CSS&lt;/li&gt;
+        &lt;li&gt;JavaScript&lt;/li&gt;
+    &lt;/ol&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+## HR Etiketi
+
+`&lt;hr&gt;` etiketi konusal bir geçişi temsil eder. Yazı yazarken yeni bir paragrafa başlamaya benzetebiliriz. Varsayılan olarak sayfaya yatay bir çizgi ekler ama bu özelliği değiştirilebilir. Bu etiket kapatılmaya ihtiyaç duymaz.
+
+```html
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      HTML yani Hiper Metin İşaretleme Dili, web sayfalarında gördüğümüz iskelet
+      yapısını oluşturmak için kullanılan metin işaretleme dilidir.
+    &lt;/p&gt;
+
+    &lt;hr&gt;
+
+    &lt;p&gt;
+      CSS, HTML elementlerinin çeşitli medya araçlarında nasıl ekrana
+      yansıtılacağını tanımlayan bir dildir. Tek seferde birden çok sayfa için
+      kurallar belirtebilir.
+    &lt;/p&gt;
+
+    &lt;hr&gt;
+
+    &lt;p&gt;
+      JavaScript, HTML ve web için bir programlama dilidir. Dinamil olarak HTML
+      içeriğini ve özelliklerini, CSS'i değiştirebilme gibi işlemleri
+      gerçekleştirebilir.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h2 id="strong-ve-b-etiketi">STRONG ve B Etiketi</h2>
+<p><code>&lt;strong&gt;</code>  etiketi bir metinin arama motorlarına önemli olduğunu bildirmek için kullanılır. Kullanıldığı zaman metini kalın yapar. Eğer sadece metini kalınlaştırmak isterseniz  <code>&lt;b&gt;</code>  etiketini kullanabilirsiniz.</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;&lt;strong&gt; Kodluyoruz &lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;&lt;b&gt; HTML &lt;/b&gt; Etiketleri &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h2 id="script-etiketi">Script Etiketi</h2>
+<p><code>&lt;script&gt;</code>  etiketi JavaScript kodlarını HTML içerisine yazabilmemizi sağlar.</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+        document.write("Kodluyoruz")
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h2 id="button-etiketi">Button Etiketi</h2>
+<p><code>&lt;button&gt;</code>  etiketini buton oluşturmak için kullanırız. Buton üzerine yazmak istediğiniz içeriği etiketin içine yazmanız yeterlidir.</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button&gt; Buton &lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h2 id="img-etiketi">img Etiketi</h2>
+<p>Resim eklemek için<code>&lt;img&gt;</code>  etiketini kullanıyoruz.  <code>&lt;img src=”resim.jpg” alt=”açıklama yazısı” /&gt;</code>  <strong>src=""</strong>  kısmına eklemek istediğimiz görselin yolunu yani kaynağını yazmalıyız. Eğer görselimiz ve HTML dosyamız aynı klasörde ise görselin adını ve uzantısını yazmamız yeterlidir.  <strong>alt=""</strong>  kısmına görselin açıklamasını yazıyoruz fakat isterseniz boş bırakabilirsiniz. Bu etiket kapanmaya ihtiyaç duymaz.</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src=”görseller/kodluyoruz.jpg” alt=”Kodluyoruz Bootcamp” /&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h2 id="iframe-etiketi">iframe Etiketi</h2>
+<p>Belge içinde belge gösterebilmemizi sağlayan etikettir. Genelde başka bir sitedeki belgeyi kendi sayfamızda göstermek için kullanırız.  <em>örn:</em>  Youtube’dan bir videoyu sayfamızda göstermek istersek  <code>&lt;iframe&gt;</code>  kodlarını sayfamıza eklememiz yeterli.(video üzerinde sağ tıklayıp yerleştirme kodunu kopyala diyerek iframe kodunu kopyalayabiliriz.)</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;iframe width="1519" height="581" src="https://www.youtube.com/embed/BHPYQHnD_QA" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h2 id="yorum-satırı">Yorum Satırı</h2>
+<p>HTML dilinde yorum satırı<code>&lt;!--</code>  ile başlar  <code>--&gt;</code>  ile biter.</p>
+<pre class=" language-text"><code class="prism  language-text">&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Örnek Yorum Satırı --&gt;
+    
+    &lt;!-- 
+        2. Örnek Yorum Satırı 
+    --&gt;   
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<p><strong>Aşağıda hadi bütün örneklerin olduğu codepen’i düzenlemekten değişiklikleri deneyimlemekten çekinme!</strong></p>
+<h2 id="kaynaklar">Kaynaklar</h2>
+<ul>
+<li><a href="https://www.w3schools.com/tags/default.asp">w3schools</a></li>
+</ul>
+</div>
+</body>
+
+</html>
